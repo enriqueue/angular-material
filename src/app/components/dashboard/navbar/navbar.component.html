@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <span>Digimon</span>
+    <span class="example-spacer"></span>
+    <button class="btn-menu" mat-stroked-button *ngFor="let item of menu" [routerLink]="item.redirect">
+        {{ item.nombre }}
+    </button>
+    <span class="example-spacer"></span>    
+    <button mat-mini-fab>
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
